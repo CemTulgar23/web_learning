@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tasarım</title>
+
+    <style>
+        * {
+            /* Tüm ögeleri kapsıyoruz */
+            box-sizing: border-box;
+            /* Artık border yer kaplamıyor */
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .kutu {
+
+            width: 25%;
+            background-color: lightcoral;
+            float: left;
+            border: 1px solid black;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        @media screen and (max-width:900px) {
+
+            .kutu {
+                width: 33%;
+            }
+
+            h1 {
+                font-size: 30px;
+                color: blueviolet;
+            }
+        }
+
+
+        @media screen and (max-width:600px) {
+
+            .kutu {
+                width: 50%;
+            }
+
+            h1 {
+                font-size: 30px;
+                color: blueviolet;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+
+            .kutu {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 15px;
+                color: green;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+
+    <div class="kutu"><img src="images/R1.jpg" alt=""></div>
+    <div class="kutu"><img src="images/R2.jpg" alt=""></div>
+    <div class="kutu"><img src="images/R1.jpg" alt=""></div>
+    <div class="kutu"><img src="images/R2.jpg" alt=""></div>
+    <div class="kutu"><img src="images/R2.jpg" alt=""></div>
+
+</body>
+
+</html>
